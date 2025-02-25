@@ -3,9 +3,6 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { z } from "zod";
 import fetch from "node-fetch"; 
 
-import { getBase64Image } from "./utils";
-
-
 interface WhimsicalResponse {
   fileURL: string;
   imageURL: string;
@@ -17,6 +14,22 @@ const server = new McpServer({
   version: "1.0.0"
 });
 
+
+/**
+ * Get base64 encoded image
+ * 
+ * @param imageUrl URL to the image we wish to convert to base64
+ * @returns Details of the image, including the base64 encoded image and the mime type
+ */
+export async function getBase64Image(imageUrl: string): Promise<{ data: string; mimeType: string }> {
+  const response = await fetch(imageUrl);
+  const buffer = await response.arrayBuffer();
+  const mimeType = response.headers.get('content-type') || 'image/png';
+  return {
+    data: Buffer.from(buffer).toString('base64'),
+    mimeType
+  };
+}
 
 /**
  * Creates a new Whimsical diagram
