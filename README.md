@@ -1,4 +1,5 @@
 # Whimsical MCP Server
+[![smithery badge](https://smithery.ai/badge/BrockReece/whimsical-mcp-server)](https://smithery.ai/server/BrockReece/whimsical-mcp-server)
 
 A Model Context Protocol (MCP) server that enables the creation of Whimsical diagrams programmatically. This server integrates with Whimsical's API to generate diagrams from Mermaid markup.
 
@@ -16,6 +17,15 @@ Here's an example of a complex system architecture diagram created using this MC
 
 ## Installation
 
+### Installing via Smithery
+
+To install Whimsical MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/BrockReece/whimsical-mcp-server):
+
+```bash
+npx -y @smithery/cli install BrockReece/whimsical-mcp-server --client claude
+```
+
+### Manual Installation
 ```bash
 # Clone the repository
 git clone https://github.com/BrockReece/whimsical-mcp-server.git
