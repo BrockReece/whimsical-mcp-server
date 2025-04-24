@@ -1,5 +1,5 @@
 # Whimsical MCP Server
-[![smithery badge](https://smithery.ai/badge/BrockReece/whimsical-mcp-server)](https://smithery.ai/server/BrockReece/whimsical-mcp-server)
+[![smithery badge](https://smithery.ai/badge/@BrockReece/whimsical-mcp-server)](https://smithery.ai/server/@BrockReece/whimsical-mcp-server)
 
 A Model Context Protocol (MCP) server that enables the creation of Whimsical diagrams programmatically. This server integrates with Whimsical's API to generate diagrams from Mermaid markup.
 
