@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/brockreece-whimsical-mcp-server-badge.png)](https://mseep.ai/app/brockreece-whimsical-mcp-server)
+
 # Whimsical MCP Server
 
 > Whimsical now has an official MCP server available [here](http://whimsical.com/mcp)
